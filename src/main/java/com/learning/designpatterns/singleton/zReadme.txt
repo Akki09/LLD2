@@ -18,3 +18,7 @@ later on no issues.
 3. Double lock check Full proof check
 
 SingletonV5(Break Singleton via Serialization and Deserialization)
+
+BreakSingletonV1 and SingletonV5(Break Singleton via Serialization and Deserialization)
+
+BreakSingletonV2 and SingletonV4(Break Singleton via ReflectionAPIs)
