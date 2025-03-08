@@ -22,3 +22,7 @@ SingletonV5(Break Singleton via Serialization and Deserialization)
 BreakSingletonV1 and SingletonV5(Break Singleton via Serialization and Deserialization)
 
 BreakSingletonV2 and SingletonV4(Break Singleton via ReflectionAPIs)
+
+ENUM
+1. Serialization safe
+2. ReflectionAPIs safe
