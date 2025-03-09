@@ -20,6 +20,8 @@ public class BreakSingletonV1 {
 
         // Here the Singleton is broke
         System.out.println("Instance 1 Hashcode: " + instance1.hashCode());
+        System.out.println("Instance 1 Hashcode: " + instance1.getName());
         System.out.println("Instance 2 Hashcode: " + instance2.hashCode());
+        System.out.println("Instance 2 Hashcode: " + instance2.getName());
     }
 }
