@@ -34,4 +34,9 @@ public class SerializeSingletonV5 implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
+    // This will create same object even after de-serialization
+    protected Object readResolve() {
+        return getInstance(name);
+    }
 }

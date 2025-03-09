@@ -18,7 +18,13 @@ public class BreakSingletonV1 {
         SerializeSingletonV5 instance2 = (SerializeSingletonV5) in.readObject();
         in.close();
 
-        // Here the Singleton is broke
+        // Here the Singleton is broke IF readResolve() is not defined in SerializeSingletonV5
+//        System.out.println("Instance 1 Hashcode: " + instance1.hashCode());
+//        System.out.println("Instance 1 Hashcode: " + instance1.getName());
+//        System.out.println("Instance 2 Hashcode: " + instance2.hashCode());
+//        System.out.println("Instance 2 Hashcode: " + instance2.getName());
+
+        // If we define then we will get same hashcode
         System.out.println("Instance 1 Hashcode: " + instance1.hashCode());
         System.out.println("Instance 1 Hashcode: " + instance1.getName());
         System.out.println("Instance 2 Hashcode: " + instance2.hashCode());
