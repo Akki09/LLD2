@@ -26,13 +26,15 @@ public class Client {
         // Issue 2: Create Object of Student if higherClassPercentage is above 50
 
         // Requirement 5
+        // Here constructor telescoping is done and in that we are validating the things
+        // If we create with default constructor then validate in setter then object is created that we don't want it
 //        Student s5 = new Student("Akshay", 49.00);
 //        System.out.println(s5.toString());
 
 
 
 
-        // Now we are solving the issue with Builder
+        // Now we are solving the both requirement with Builder
 
         Student2 build = Student2.getBuilder().setName("Akshay").setAge(30).setGender('M').build();
         System.out.println(build.toString());
